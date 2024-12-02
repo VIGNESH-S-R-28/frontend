@@ -1,0 +1,90 @@
+.cont {
+    
+    position: relative;
+    margin: 130px;
+    border: 2px solid red;
+    background-color: yellow;
+    width: 400px;
+    height: 400px;
+    
+    animation-name: animation1;
+    
+    animation-duration: 5s;
+    
+    
+    
+}
+
+.anim {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    background-color: red;
+    border: 2px solid rgb(247, 245, 245);
+    border-radius: 50%;
+    bottom: 0%;
+    left: 165px;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-timing-function: ease; 
+    
+    
+}
+@keyframes animation {
+    0% {
+        bottom: 0px;
+        left: 165px;
+        background-color: blue;
+       
+        
+    }
+    
+    25%{
+        bottom: 0px;
+        left: 0px;
+        background-color: rgb(72, 0, 255);
+    }
+    50%{
+        bottom: 0px;
+        left: 340px;
+        background-color: rgb(72, 0, 255);
+    }
+    /* 75%{
+        bottom: 0px;
+        left: 340px;
+        background-color: rgb(72, 0, 255);
+    } */
+    100%{
+        bottom: 0px;
+        left: 165px;
+        background-color: rgb(255, 85, 0);
+    }
+
+}
+@keyframes animation1 {
+    0% {
+        
+        transform: rotate(0deg);
+        
+    }
+    25% {
+        
+        transform: rotate(-45deg);
+        
+    }
+    50% {
+        
+        transform: rotate(45deg);
+        
+    }
+    75% {
+        
+        transform: rotate(-45deg);
+        
+    }
+    100% {
+        
+        transform: rotate(0deg);
+        
+    }
+}
